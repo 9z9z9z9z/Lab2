@@ -9,6 +9,7 @@ right = int(tmp_num[1])
 
 count = 0
 
+# Подсчёт файлов с размером из заданного промежутка
 for filename in os.listdir(path):
     f = os.path.join(path, filename)
     if left * 1024 <= os.path.getsize(f) and os.path.getsize(f) <= right * 1024:

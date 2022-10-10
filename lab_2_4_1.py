@@ -1,7 +1,7 @@
 import os
 from random import randint
 
-
+# Функция генерации файла
 def generate(path):
     n = 100
     for i in range(n):
@@ -13,9 +13,7 @@ def generate(path):
 
 
 path = "example\\"
-
 os.mkdir("example")
-
 generate(path)
 
 
